@@ -155,6 +155,16 @@ h2:after {
     margin-top: 20px;
 }
 
+.logo-black { 
+    display: none; 
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/* Main nav */
+
 .main-nav {
     float: right;
     list-style: none;
@@ -181,6 +191,45 @@ h2:after {
 
 .main-nav li a:hover,
 .main-nav li a:active { border-bottom: 2px solid #e67e22; }
+
+
+/* Mobile nav */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+
+/* Sticky nav */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #f7f7f7;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /*--------------------------------------------*/
 /* BUTTONS */
@@ -564,7 +613,30 @@ footer p {
 }
 
 
+/*--------------------------------------------*/
+/* ANIMATIONS */
+/*--------------------------------------------*/
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js-wp-4 { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+}
+
+/*Now show it, on the animated class name. This one needs both classes at the same time, so it's written as below*/
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
 
 
 
