@@ -522,11 +522,39 @@ cite img {
 .plan-box ul li { padding: 5px 0; }
 
 /*--------------------------------------------*/
+/* GOOGLE MAP */
+/*--------------------------------------------*/
+
+.map-box {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 0;
+}
+
+.form-box {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    height: 500px;
+    padding-top: 40px;
+}
+
+/*--------------------------------------------*/
 /* CONTACT FORM */
 /*--------------------------------------------*/ 
 
 .contact-form {
-    width: 60%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -637,6 +665,7 @@ footer p {
 .js--wp-3.animated {
     opacity: 1;
 }
+
 
 
 
