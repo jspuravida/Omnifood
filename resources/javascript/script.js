@@ -2,8 +2,6 @@
 //This selects the h1 element, and when you click it, it switches the color
 //Everything has to live within the original document.ready function
 
-//We used the plugin called Waypoints, to trigger a function when the user scrolls to an element
-
 //$(document).ready(function() {
 //    
 //    $('h1').click(function(){
@@ -18,6 +16,9 @@
 //Add a class to the nav element everytime we leave the header
 
 //WAYPOINTS PLUGIN
+// (to trigger a function when the user scrolls to an element)
+
+//We used the plugin called Waypoints, to trigger a function when the user scrolls to an element
 
 //var waypoints = $('#handler-first').waypoint(function(direction) {
 //  notify(this.element.id + ' hit 25% from top of window') 
