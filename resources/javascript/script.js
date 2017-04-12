@@ -127,21 +127,28 @@ $(document).ready(function() {
     //-----------------------------
     
     
-    var map = new GMaps({
+    
+
+    new GMaps({
       div: '.map',
       lat: 49.2822403,
-      lng: -123.0452537,
-      zoom: 12
+      lng: -123.0452537
     });
-    
-    map.addMarker({
-      lat: 49.3017049,
-      lng: -123.143889,
-      title: 'Vancouver',
-      infoWindow: {
-        content: '<p>Vancouver, BC Canada</p>'
-      }
-    });
+//    var map = new GMaps({
+//      div: '.map',
+//      lat: 49.2822403,
+//      lng: -123.0452537,
+//      zoom: 12
+//    });
+//    
+//    map.addMarker({
+//      lat: 49.3017049,
+//      lng: -123.143889,
+//      title: 'Vancouver',
+//      infoWindow: {
+//        content: '<p>Vancouver, BC Canada</p>'
+//      }
+//    });
     
 });
 

@@ -11,7 +11,7 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">   
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">   
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet" type="text/css">
         
@@ -365,29 +365,27 @@
             <div class="map"></div>
             
             <div class="form-box" id="form">
-            
                 <div class="row">
                     <h2>We're happy to hear from you
                     </h2>
                 </div>
 
                 <div class="row">
-                    <form method="post" action="" class="contact-form">
+                    <form method="post" action="mailer.php" class="contact-form">
                         
-<!--
-                        <div class="row">
-                            <div class="form-messages success">
-                                Thank you! Your message has been sent!
-                            </div>
-                            
-                            <div class="form-messages error">
-                                Something went wrong, please try again.
-                            </div>
+                        <div class="row">              
+                            <?php
+                                if($_GET['success'] == 1) {
+                                    echo "<div class=\"form-messages success\">Thank you!  Your message has been sent!</div>";
+                                }
+
+                                if($_GET['success'] == -1) {
+                                    echo "<div class=\"form-messages error\">Something went wrong, please try again.</div>";
+                                }
+                            ?>         
                         </div>
--->
 
                         <div class="row">
- 
                             <div class="col span-1-of-3">
                                 <label for="name">Name</label>
                             </div>                
@@ -490,7 +488,6 @@
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
           ga('create', 'UA-97209541-1', 'auto');
           ga('send', 'pageview');
         </script>
